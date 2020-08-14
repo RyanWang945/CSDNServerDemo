@@ -1,3 +1,4 @@
+#如何访问eureka server？直接在浏览器中访问127.0.0.1:6868就可以啦，不需要加eureka
 server:
   port: 6868
 spring:
@@ -9,3 +10,5 @@ eureka:
     fetch-registry: false
     server-url:
       defaultZone: http://127.0.0.1:/${server.port}}/eureka/
+#  instance:
+#    prefer-ip-address: true

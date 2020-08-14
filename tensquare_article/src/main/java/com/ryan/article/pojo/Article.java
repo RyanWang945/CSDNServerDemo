@@ -13,7 +13,7 @@ import java.util.Date;
  */
 @TableName("tb_article")
 public class Article implements Serializable {
-    @TableId(type = IdType.INPUT)
+    @TableId(type = IdType.INPUT)//表示mybatisplus的主键策略，用户输入。
     private String id;//ID
     private String columnid; //专栏ID
     private String userid; //用户ID

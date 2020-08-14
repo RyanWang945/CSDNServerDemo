@@ -56,6 +56,7 @@ public class ArticleService {
     }
     public Article findById(String articleId){
         return articleDao.selectById(articleId);
+        //return articleDao.selectById(articleId);
     }
     public void save(Article article){
         //TODO:使用jwt鉴权获取当前用户的信息，用户id，也就是文章作者id
@@ -107,6 +108,10 @@ public class ArticleService {
 //        wrapper.eq("id",article.getId());
 //        articleDao.update(article,wrapper);
     }
+
+    /**
+     *这里的分页查询是通过mybatis-plus提供的Page实现的
+     */
     public void deleteById(String articleId){
         articleDao.deleteById(articleId);
     }

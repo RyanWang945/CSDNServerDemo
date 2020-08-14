@@ -5,6 +5,7 @@ import java.util.List;
 /**
  * @author Ryan
  * @date 2020/7/10 8:47
+ * 这个应该是分页专用的entity吧
  */
 public class PageResult<T> {
     private Long total;

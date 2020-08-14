@@ -9,8 +9,6 @@ import com.ryan.entity.StatusCode;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.web.bind.annotation.*;
-
-import java.sql.ResultSet;
 import java.util.List;
 import java.util.Map;
 
